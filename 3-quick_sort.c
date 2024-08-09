@@ -63,11 +63,11 @@ int partition(int *array, int low, int high, size_t size)
  *@size: array size
  */
 
-void recur_quick_sort(int *array, int low, int high, size_t size)
+void recur_quick_sort(int array[], int low, int high, size_t size)
 {
 	int rota;
 
-	if (high > low)
+	if (low < high)
 	{
 		rota = partition(array, low, high, size);
 
